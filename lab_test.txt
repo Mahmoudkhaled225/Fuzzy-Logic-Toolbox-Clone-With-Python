@@ -1,0 +1,35 @@
+3
+dirt IN 0 100
+fabric IN 0 100
+time OUT 0 60
+
+3
+dirt
+3
+small TRAP 0 0 20 40
+medium TRAP 20 40 60 80
+large TRAP 60 80 100 100
+
+fabric
+3
+soft TRAP 0 0 20 40
+ordinary TRAP 20 40 60 80
+stiff TRAP 60 80 100 100
+ 
+time
+5
+verySmall TRI 0 0 15
+Small TRI 0 15 30
+standard TRI 15 30 45
+Large TRI 30 45 60
+veryLarge TRI 45 60 60
+
+60
+25
+
+4
+dirt small and fabric soft => time verySmall
+dirt medium and fabric ordinary => time standard
+dirt medium and fabric stiff => time Large
+dirt large and_not fabric soft => time veryLarge
+dirt large and fabric soft => time standard
